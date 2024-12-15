@@ -1,0 +1,16 @@
+# .air.toml
+
+# Root directory to watch
+root = "."
+
+# Extensions to watch for changes
+include = ["go", "tpl", "tmpl", "html"]
+
+# Exclude files to ignore for changes
+exclude = ["assets", "tmp", "vendor"]
+
+# Command to run when files change
+cmd = "go run main.go"
+
+# Set delay for restarting server
+delay = 1000
